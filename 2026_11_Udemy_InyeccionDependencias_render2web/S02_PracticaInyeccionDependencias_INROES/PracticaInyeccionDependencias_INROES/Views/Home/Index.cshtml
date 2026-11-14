@@ -1,0 +1,21 @@
+﻿@using System.Collections.Generic
+@model IEnumerable<string>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Inyección de Dependencias (DI)</h1>
+    <p>ASP.NET Core MVC</p>
+</div>
+
+<div>
+    <h3>Ciudades</h3>
+    <ul>
+        @foreach (var ciudad in Model)
+        {
+            <li>@ciudad</li>
+        }
+    </ul>
+</div>
